@@ -6,7 +6,7 @@ import MyFunctionComponent from "./MyFunctionComponent";
  */
 class MyClassComponent extends Component {
 
-  //Constructor. Mounting cicle
+  //Constructor. Mounting phase
   constructor(props) {
     super(props);
     console.log("Example 2: In constructor");
@@ -25,12 +25,12 @@ class MyClassComponent extends Component {
     });
   }
 
-  //Mounting cicle: function called when the component Is mounted
+  //Mounting phase: function called when the component Is mounted
   componentDidMount() {
     console.log("Example 2: Did mount");
   }
 
-  //Updating cicle: function called when the component is updated
+  //Updating phase: function called when the component is updated
   componentDidUpdate(prevProps, prevState) {
     console.log("Example 2: Did update.");
   }
